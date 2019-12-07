@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148747994-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148747994-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>最新消息-瓦庫麻辣鍋</title>
+  <!-- ↓ 匯入boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- ↓ 匯入font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+  <!-- ↓ 匯入Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
+  <!-- ↓ 匯入css -->
+  <link rel="stylesheet" href="./dist/news.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loadicon">
+      <img class="loadimg" src="./img/Logo2.svg" alt="瓦庫麻辣鍋">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+  </div>
+
+  <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
+  <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
+    <div class="container">
+      <a class="navbar-brand" href="https://wowcoolpot.github.io/"><img id="nav-logo-img" src="./img/nav-logo.png"
+          alt="瓦庫麻辣鍋" title="瓦庫麻辣鍋"></a>
+
+      <button class="hamburger hamburger--slider" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <!-- ml-auto讓選單靠右 ↑ -->
+          <li class="nav-item ml-lg-3 ml-0">
+            <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+            <a class="nav-link maxwww font-weight-bold" href="./index.html">關於瓦庫</a>
+          </li>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="#">最新消息</a>
+          </li>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
+          </li>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
+          </li>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
+          </li>
+          <li class="nav-item ml-lg-3 ml-0">
+            <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
+          </li>
+          <li id="book-border" class="nav-item ml-5">
+            <div class="book-side">
+              <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block"
+                href="./contact.html">線上訂位</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="booking-icon d-lg-none d-block"><a href=""><i class="far fa-calendar-alt"></i></a></div>
+  </nav>
+  <div class="banner mx-auto">
+    <div class="container d-flex justify-content-end">
+      <div class="news_text">
+        <h1>最<br>新<br>消<br>息</h1>
+        <div class="titlebox"></div>
+      </div>
+      <!-- mobile menu button start -->
+      <div class="news_text mob" data-toggle="collapse" data-target="#collapseNews" aria-expanded="false"
+        aria-controls="collapseNews">
+        <h1>最新消息<i class="fas fa-chevron-down"></i></h1>
+      </div>
+      <!-- mobile menu button end -->
+    </div>
+  </div>
+  <section id="news">
+    <!-- mobile collapse menu start-->
+    <div class="collapse" id="collapseNews">
+      <div class="mobile_Type  enable">
+        <p class="m-0 type_text">
+          <h2>所有訊息</h2>
+        </p>
+      </div>
+      <div class="mobile_Type">
+        <p class="m-0 type_text">
+          <h2>活動情報</h2>
+        </p>
+      </div>
+      <div class="mobile_Type">
+        <p class="m-0 type_text">
+          <h2>新品上市</h2>
+        </p>
+      </div>
+    </div>
+    <!-- mobile collapse menu end -->
+    <div class="container">
+      <!-- for PC menu start -->
+      <div class="newsbtn_group d-flex justify-content-center">
+        <div class="newsbtn enable">
+          <div class="text">
+            <h2>所有訊息</h2>
+          </div>
+        </div>
+        <div class="newsbtn">
+          <div class="text">
+            <h2>活動情報</h2>
+          </div>
+        </div>
+        <div class="newsbtn">
+          <div class="text">
+            <h2>新品上市</h2>
+          </div>
+        </div>
+      </div>
+      <!-- for PC menu end -->
+      <!-- News group start -->
+      <div class="news_group">
+        <!-- all News group start -->
+        <div id="all" class="row">
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event6" href=""><img data-src="./img/event6.jpg"
+                  class="card-img-top lazyload" alt="賀慶！瓦庫麻辣鍋FB粉絲突破1萬大關！"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">賀慶！瓦庫麻辣鍋<br>FB粉絲突破1萬大關！</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event5" href=""><img data-src="./img/event5.jpg"
+                  class="card-img-top lazyload" alt="歡慶中秋佳節~團聚享優惠！"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">歡慶中秋佳節~<br>團聚享優惠！</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="newfood">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#newfood3" href=""><img data-src="./img/newfood3.jpg"
+                  class="card-img-top lazyload" alt="鮮抓牛肉片~滑嫩上鍋啦~~~"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">鮮抓牛肉片~<br>滑嫩上鍋啦~~~</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event4" href=""><img data-src="./img/event4.jpg"
+                  class="card-img-top lazyload" alt="青春不留白!勇敢讚出來！"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">青春不留白!<br>勇敢讚出來！</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event3" href=""><img data-src="./img/event3.jpg"
+                  class="card-img-top lazyload" alt="雙庫合一~庫粉召集令！"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">雙庫合一~<br>庫粉召集令！</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="newfood">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#newfood2" href=""><img data-src="./img/newfood2.jpg"
+                  class="card-img-top lazyload" alt="新拼盤✨~超蝦🦐拼盤上鍋啦~~"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">新拼盤✨~<br>超蝦🦐拼盤上鍋啦~~</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="newfood">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#newfood1" href=""><img data-src="./img/newfood1.jpg"
+                  class="card-img-top lazyload" alt="爽脆今夏~冰球鵝腸上鍋啦~~~"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">新品<br>上市</div>
+                </div>
+                <div class="news_Title ml-4">爽脆今夏~<br>冰球鵝腸上鍋啦~~~</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event2" href=""><img data-src="./img/event2.jpg"
+                  class="card-img-top lazyload" alt="歡慶母親節~你打卡，我上菜"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">歡慶母親節~<br>你打卡，我上菜</div>
+              </div>
+            </div>
+          </div>
+          <div class="news col-12 col-sm-12 col-md-6 col-lg-4 mb-80 enable" data-item="event">
+            <div class="card text-dark">
+              <a data-toggle="modal" data-target="#event1" href=""><img data-src="./img/event1.jpg"
+                  class="card-img-top lazyload" alt="瓦庫麻辣鍋~歡慶開幕送好禮!"></a>
+              <div class="card-body p-0 mt-4 d-flex">
+                <div class="news_Type d-flex justify-content-center align-items-center">
+                  <div class="news_Type_Text">活動<br>情報</div>
+                </div>
+                <div class="news_Title ml-4">瓦庫麻辣鍋~<br>歡慶開幕送好禮!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- all News group end -->
+      </div>
+    </div>
+    <!-- model start -->
+    <section id="model_group">
+      <div class="modal fade" id="event1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event1.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>瓦庫麻辣鍋，歡慶開幕抽好禮！</h2>
+                    <p>
+                      為了慶祝瓦庫麻辣鍋盛大開張，我們準備了超值大禮迎接您的到來，即日起至4/17日，完成以下四個步驟，即有機會獲得2000元現金抵用券喔~<br>步驟1. 👉
+                      按讚追蹤瓦庫麻辣鍋粉絲專頁<br>步驟2. 👉 按讚本貼文<br>步驟3. 👉 於貼文下方留言並標註3位朋友<br>例: [ 帥哥哥辣妹子 相約瓦庫開鍋 @洪花嬌 @甘辣驕 @石柱紅
+                      ]<br>步驟4. 👉 *公開*分享本貼文<br>✨四個步驟缺一不可喔<br>🎁 獎項：<br>2000元現金抵用券十名<br>
+                      <br>(僅限瓦庫麻辣鍋用餐，不得折現)<br>得獎公佈日期：2019/4/19<br>獎品兌換截至日期：2019/5/19<br>訂位資訊—台中市中區自由路二段33號，04-22231155
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="event2" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event2.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>歡慶母親節~你打卡，我上菜！</h2>
+                    <p>
+                      每年一度的這個慰勞辛苦偉大的母親的節日又到來了，或許平日工作繁忙，一直沒有機會說出口，記得要好好表達對母親的感謝喔~瓦庫麻辣鍋在此祝全天下的媽媽「母親節快樂！」。還在煩惱要帶親愛的媽媽去哪裡吃大餐慶祝嗎?
+                      即日起至5/12日，來店用餐拍照打卡IG地標-瓦庫麻辣鍋，即贈麻香開胃、酸溜爽口的人氣單品麻辣寬粉。瓦庫麻辣鍋提供給您最棒的美食享受，讓母親節成為最難忘的回憶！
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="event3" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event3.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>雙庫合一~!庫粉召集令！</h2>
+                    <p>
+                      各位晚上好～瓦庫燒肉開業至今兩年半左右，今年團隊第二個品牌誕生—「瓦庫麻辣鍋」，感謝大家一路支持！即日起至9/30日截止，活動期間內，於瓦庫燒肉及瓦庫麻辣鍋各消費一次，即可兌換9折貴賓卡一張。這麼好康的事，勤儉持家的您絕對不容錯過。
+                      (備註: 110年底前持卡消費皆9折，雙店共用(瓦庫燒肉/麻辣鍋)，不限本人使用。)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="event4" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event4.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>青春不留白，勇敢讚出來！</h2>
+                    <p>
+                      瓦庫麻辣鍋的建築與裝潢充滿濃厚的中國文藝氣息風格，所謂「人要衣裝，佛要金裝」，結合建築特色呈現最吸睛最完美的您，肯定能在青春的頁面中留下深刻難忘的回憶。即日起至9/30日完成以下步驟即有機會獲得高額獎金喔~<br>
+                      步驟1: 拍出您最有自信的作品。<br>步驟2: 將作品上傳至瓦庫官方LINE@。<br>步驟3: 分享作品至瓦庫麻辣鍋FB粉專。<br>獎項:
+                      按讚數第1名—獎金5萬—1位<br>按讚數第2名—獎金3萬—1位<br>按讚數第3名—獎金1萬—1位<br>按讚數第4~15名—獎金5千—12位<br>參加獎-瓦庫麻辣鍋抵用券500元-所有參賽者
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="event5" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event5.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>歡慶中秋佳節，團聚享優惠！</h2>
+                    <p>
+                      每逢中秋節大家最期待的肯定是與親朋好友齊聚烤肉，今年，是否有想過個不一樣的中秋節體驗呢?
+                      瓦庫麻辣鍋會是您最棒的選擇，即日起至9/15日來店用餐，拍照菜品上傳Instagram並tag#瓦庫麻辣鍋，即可享有以下折扣並隨桌贈送中秋特別神秘加菜:<br>(因為還要想加菜跟找加菜圖很麻煩所以加個神祕省事↑)<br>{消費滿500現折100}<br>{消費滿1000現折200}<br>瓦庫麻辣鍋在此祝大家「中秋節快樂！」
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="event6" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/event6.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>賀慶！瓦庫麻辣鍋FB粉絲突破1萬大關！</h2>
+                    <p>
+                      瓦庫麻辣鍋FB粉絲團粉絲突破1萬人次，為了感謝大家對於瓦庫的支持，我們將邀請大家一同來共襄盛舉，提供最好的回饋給您，瓦庫今後也將維持最佳的服務精神，您的支持，是我們堅持的最大動力。即日起至9/30日全館菜品75折起，期間限量好禮每日限定100份，發完即止。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="newfood1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/newfood1.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>爽脆今夏，冰球鵝腸上鍋啦~~~</h2>
+                    <p>
+                      每根鵝腸都來自供應商當天直供，一經取材，全程保持在0~5℃的水裡進行處理。鵝腸在冰球裡面保鮮，色澤鮮亮，新鮮欲滴。只需要稍加涮燙到微微捲起，便是最佳口感。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="newfood2" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/newfood2.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>新拼盤✨<br>超蝦🦐拼盤上鍋啦~~~</h2>
+                    <p>
+                      草蝦與白蝦的完美組合，兩個願望一次滿足~
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="newfood3" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- close button -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6"><img class="lazyload" style="width:100%" data-src="./img/newfood3.jpg"
+                      alt=""></div>
+                  <div class="col-md-12 col-lg-6">
+                    <h2>鮮抓牛肉片滑嫩上鍋啦~~~</h2>
+                    <p>
+                      嚴選溫體牛里肌切成片狀，醃製蛋白與獨門醬料，肉質滑嫩鮮甜。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-box">
+      <div class="footer-logo">
+        <img src="./img/footer-logo.png" alt="瓦庫麻辣鍋">
+        <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
+        <p>WOW COOL HOT POT</p>
+      </div>
+
+      <div class="container">
+        <div class="footer-information-com">
+          <p>
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            台中市中區自由路2段33號
+            <i class="fas fa-phone-alt mr-2 ml-4"></i>
+            04-2223-1155
+          </p>
+        </div>
+        <div class="row footer-information-mobile">
+          <div class="col-12">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            台中市中區自由路2段33號
+          </div>
+          <div class="col-12">
+            <i class="fas fa-phone-alt mr-2"></i>
+            04-2223-1155
+          </div>
+        </div>
+      </div>
+      <div class="footer-icon-group">
+        <a href="" title="瓦庫麻辣鍋LINE"><i class="fab fa-line"></i></a>
+        <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
+          target="_blank" title="瓦庫麻辣鍋FB"><i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank" title="瓦庫麻辣鍋IG"><i
+            class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="footer-copyright ">
+        <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
+          Design by 腳麻吃麻辣鍋<br>僅供學習用途，如有侵權請來信告知。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js"></script>
+  <script>
+    //PC板分類的jQuery
+    $('.newsbtn').click(function () {
+      var btn_index = $('.newsbtn').index(this) + 1;
+      var event = document.querySelectorAll('.news[data-item="event"]');
+      var newfood = document.querySelectorAll('.news[data-item="newfood"]');
+      console.log(btn_index);
+      //remove all enable
+      $('.newsbtn').removeClass('enable');
+      $('.mobile_Type').removeClass('enable');
+      //add button enable
+      $(`.newsbtn:nth-child(${btn_index})`).addClass('enable');
+      $(`.mobile_Type:nth-child(${btn_index})`).addClass('enable');
+      //判斷消息種類
+      if (btn_index == 1) {
+        $('.news').removeClass('enable');
+        $('.news').addClass('enable');
+        return;
+      }
+      if (btn_index == 2) {
+        $('.news').removeClass('enable');
+        $(event).addClass('enable')
+        return;
+      }
+      if (btn_index == 3) {
+        $('.news').removeClass('enable');
+        $(newfood).addClass('enable');
+        return;
+      }
+    })
+    //手機板分類的jQuery
+    $('.mobile_Type').click(function () {
+      var btn_index = $('.mobile_Type').index(this) + 1;
+      var event = document.querySelectorAll('.news[data-item="event"]');
+      var newfood = document.querySelectorAll('.news[data-item="newfood"]');
+      console.log(btn_index);
+      //remove all enable
+      $('.mobile_Type').removeClass('enable');
+      $('.newsbtn').removeClass('enable');
+      //add button enable
+      $(`.mobile_Type:nth-child(${btn_index})`).addClass('enable');
+      $(`.newsbtn:nth-child(${btn_index})`).addClass('enable');
+      //判斷消息種類
+      if (btn_index == 1) {
+        $('.news').removeClass('enable');
+        $('.news').addClass('enable');
+        return;
+      }
+      if (btn_index == 2) {
+        $('.news').removeClass('enable');
+        $(event).addClass('enable')
+        return;
+      }
+      if (btn_index == 3) {
+        $('.news').removeClass('enable');
+        $(newfood).addClass('enable');
+        return;
+      }
+    })
+  </script>
+  <script>
+    var $hamburger = $(".hamburger");
+    $hamburger.on("click", function (e) {
+      $hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+    });
+  </script>
+  <!-- gotop卷軸偵測jquery -->
+  <script>
+    $(function () {
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+          $('#gotop').fadeIn("slow");
+        } else {
+          $('#gotop').fadeOut("slow");
+        }
+      });
+    });
+  </script>
+  <script>
+    $(window).on("load", function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+      // $("#status").fadeOut();
+      // $("#loading_txt").fadeOut();
+      $(".preloader").delay(350).fadeOut("slow");
+    });
+  </script>
+</body>
+
+</html>
