@@ -1,289 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-148747994-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148747994-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+			gtag("config", "UA-148747994-1");
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>問與答-瓦庫麻辣鍋</title>
+		<!-- ↓ 匯入boostrap -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+			integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+			crossorigin="anonymous"
+		/>
+		<!-- ↓ 匯入font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+			integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9"
+			crossorigin="anonymous"
+		/>
+		<!-- ↓ 匯入Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./dist/FAQ.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+		/>
+		<!-- ↓ lazyload -->
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="lazyload.min.js"></script>
+	</head>
 
-        gtag('config', 'UA-148747994-1');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>問與答-瓦庫麻辣鍋</title>
-    <!-- ↓ 匯入boostrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- ↓ 匯入font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
-        integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
-    <!-- ↓ 匯入Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Serif+TC:500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/FAQ.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-    <!-- ↓ lazyload -->
-    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="lazyload.min.js"></script>
+	<body>
+		<div class="preloader">
+			<div class="loadicon">
+				<img class="loadimg" src="./img/Logo2.svg" alt="瓦庫麻辣鍋" />
+				<div class="sk-folding-cube">
+					<div class="sk-cube1 sk-cube"></div>
+					<div class="sk-cube2 sk-cube"></div>
+					<div class="sk-cube4 sk-cube"></div>
+					<div class="sk-cube3 sk-cube"></div>
+				</div>
+			</div>
+		</div>
+		<a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
+		<nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
+			<div class="container">
+				<a class="navbar-brand" href="./index.html"
+					><img
+						id="nav-logo-img"
+						src="./img/nav-logo.png"
+						alt="瓦庫麻辣鍋"
+						title="瓦庫麻辣鍋"
+				/></a>
 
-</head>
+				<button
+					class="hamburger hamburger--slider"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ml-auto">
+						<!-- ml-auto讓選單靠右 ↑ -->
+						<li class="nav-item ml-lg-3 ml-0">
+							<!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
+							<a class="nav-link maxwww font-weight-bold" href="./index.html"
+								>關於瓦庫</a
+							>
+						</li>
+						<li class="nav-item ml-lg-3 ml-0">
+							<a class="nav-link maxwww font-weight-bold" href="./news.html"
+								>最新消息</a
+							>
+						</li>
+						<li class="nav-item ml-lg-3 ml-0">
+							<a class="nav-link maxwww font-weight-bold" href="./hotpot.html"
+								>鮮來開鍋</a
+							>
+						</li>
+						<li class="nav-item ml-lg-3 ml-0">
+							<a class="nav-link maxwww font-weight-bold" href="./menu.html"
+								>瓦庫好料</a
+							>
+						</li>
+						<li class="nav-item ml-lg-3 ml-0">
+							<a class="nav-link maxwww font-weight-bold" href="./contact.html"
+								>瓦庫在哪</a
+							>
+						</li>
+						<li class="nav-item ml-lg-3 ml-0">
+							<a class="nav-link maxwww font-weight-bold" href="./FAQ.html"
+								>常見問題</a
+							>
+						</li>
+						<li id="book-border" class="nav-item ml-5">
+							<div class="book-side">
+								<a
+									id="book-text"
+									class="nav-link maxwww font-weight-bold d-none d-lg-block"
+									href="./contact.html"
+									>線上訂位</a
+								>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-<body>
-    <div class="preloader">
-        <div class="loadicon">
-            <img class="loadimg" src="./img/Logo2.svg" alt="瓦庫麻辣鍋">
-            <div class="sk-folding-cube">
-                <div class="sk-cube1 sk-cube"></div>
-                <div class="sk-cube2 sk-cube"></div>
-                <div class="sk-cube4 sk-cube"></div>
-                <div class="sk-cube3 sk-cube"></div>
-            </div>
-        </div>
-    </div>
-    <a id="gotop" href="#"><i class="fas fa-angle-up"></i></a>
-    <nav class="navbar navbar-expand-lg navbar-light px-0 pb-0">
-        <div class="container">
-            <a class="navbar-brand" href="https://wowcoolpot.github.io/"><img id="nav-logo-img" src="./img/nav-logo.png" alt="瓦庫麻辣鍋"
-                    title="瓦庫麻辣鍋"></a>
+			<div class="booking-icon d-lg-none d-block">
+				<a href="./contact.html"><i class="far fa-calendar-alt"></i></a>
+			</div>
+		</nav>
 
-            <button class="hamburger hamburger--slider" type="button" data-toggle="collapse"
-                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <!-- ml-auto讓選單靠右 ↑ -->
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <!--             ↑ ml-4 雖然電腦版沒用，但手機版要 -->
-                        <a class="nav-link maxwww font-weight-bold" href="./index.html">關於瓦庫</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./news.html">最新消息</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./hotpot.html">鮮來開鍋</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./menu.html">瓦庫好料</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./contact.html">瓦庫在哪</a>
-                    </li>
-                    <li class="nav-item ml-lg-3 ml-0">
-                        <a class="nav-link maxwww font-weight-bold" href="./FAQ.html">常見問題</a>
-                    </li>
-                    <li id="book-border" class="nav-item ml-5">
-                        <div class="book-side">
-                            <a id="book-text" class="nav-link maxwww font-weight-bold d-none d-lg-block"
-                                href="./contact.html">線上訂位</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<section id="FAQQ">
+			<div class="row">
+				<div class="FAQ-banner"></div>
+			</div>
+			<div class="container">
+				<div id="FAQ-L-mobile" class="d-block d-md-none">
+					<h1>瓦庫來解答</h1>
+					<div class="FAQ-L-mobileColor"></div>
+				</div>
+				<div id="FAQ" class="row">
+					<div id="FAQ-L" class="col-1 font-weight-bold d-none d-md-block">
+						<h1>瓦<br />庫<br />來<br />解<br />答</h1>
+						<div class="bg-colorA"></div>
+						<div class="bg-colorB"></div>
+					</div>
+					<div class="col-1 p-0"></div>
+					<!-- ↑ 卡白用 -->
+					<div id="FAQ-R" class="col-md-7 col-12 px-5">
+						<!-- 問題11111111111111111111 -->
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
+							Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
+							<a data-toggle="collapse" href="#row-1">
+								<i class="fas fa-plus icon-color FQA-gps"></i>
+							</a>
+						</div>
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
+							<a data-toggle="collapse" href="#row-1">
+								Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
+							</a>
+						</div>
+						<!-- 收合bootstrap ↑ ↓ -->
+						<div class="collapse bg-expand-color px-2" id="row-1">
+							A : 不同地方喔 ~
+						</div>
+						<!-- 問題22222222222222222222 -->
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
+							Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
+							<a data-toggle="collapse" href="#row-2">
+								<i class="fas fa-plus icon-color FQA-gps"></i>
+							</a>
+						</div>
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
+							<a data-toggle="collapse" href="#row-2">
+								Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
+							</a>
+						</div>
+						<div class="collapse bg-expand-color px-2" id="row-2">
+							A : 有 ~
+							牛油是麻辣鍋好吃的秘訣。不吃牛可選老火燉雞/野椒酸菜/上湯番茄/蟲草菌菇。
+						</div>
+						<!-- 問題33333333333333333333 -->
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
+							Q : 開鍋費為何酌收 $120 ?
+							<a data-toggle="collapse" href="#row-3">
+								<i class="fas fa-plus icon-color FQA-gps"></i>
+							</a>
+						</div>
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
+							<a data-toggle="collapse" href="#row-3">
+								Q : 開鍋費為何酌收 $120 ?
+							</a>
+						</div>
+						<div class="collapse bg-expand-color px-2" id="row-3">
+							A : 開鍋費不單是白飯、醬料 . . .
+							鍋底完全天然熬煮，麻辣鍋嚴選進口石柱紅乾辣椒、金陽花椒、燈籠椒為底料，老火燉雞更是以老母雞、土雞爪、精華火腿燉煮24小時，因此食材成本較高喔。
+						</div>
+						<!-- 問題44444444444444444444 -->
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
+							Q : 請問有特約停車場嗎 ?
+							<a data-toggle="collapse" href="#row-4">
+								<i class="fas fa-plus icon-color FQA-gps"></i>
+							</a>
+						</div>
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
+							<a data-toggle="collapse" href="#row-4">
+								Q : 請問有特約停車場嗎 ?
+							</a>
+						</div>
+						<div class="collapse bg-expand-color px-2" id="row-4">
+							A : 對面有Times收費停車場喔 ~
+						</div>
+						<!-- 問題55555555555555555555 -->
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
+							Q : 請問有提供鍋底外帶嗎 ?
+							<a data-toggle="collapse" href="#row-5">
+								<i class="fas fa-plus icon-color FQA-gps"></i>
+							</a>
+						</div>
+						<div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
+							<a data-toggle="collapse" href="#row-5">
+								Q : 請問有提供鍋底外帶嗎 ?
+							</a>
+						</div>
+						<div class="collapse bg-expand-color px-2" id="row-5">
+							<p class="p-0 A5-text">
+								A : 小鍋(2-4人)$300湯底選一+ 700自選食材 + 15 包裝
+							</p>
+							<p class="Q5-padding mb-0">
+								大鍋(4人以上)$600湯底選一+ 700自選食材 + 15 包裝
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="booking-icon d-lg-none d-block"><a href="./contact.html"><i class="far fa-calendar-alt"></i></a>
-        </div>
-    </nav>
+		<footer>
+			<div class="footer-box">
+				<div class="footer-logo">
+					<img
+						src="./img/footer-logo.png"
+						class="lazyload"
+						data-src="./img/footer-logo.png"
+						alt="瓦庫麻辣鍋"
+					/>
+					<div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
+					<p>WOW COOL HOT POT</p>
+				</div>
 
-    <section id="FAQQ">
-        <div class="row">
-            <div class="FAQ-banner"></div>
-        </div>
-        <div class="container">
-            <div id="FAQ-L-mobile" class="d-block d-md-none">
-                <h1>瓦庫來解答</h1>
-                <div class="FAQ-L-mobileColor"></div>
-            </div>
-            <div id="FAQ" class="row">
-                <div id="FAQ-L" class="col-1 font-weight-bold d-none d-md-block">
-                    <h1>
-                        瓦<br>庫<br>來<br>解<br>答
-                    </h1>
-                    <div class="bg-colorA"></div>
-                    <div class="bg-colorB"></div>
-                </div>
-                <div class="col-1 p-0"></div>
-                <!-- ↑ 卡白用 -->
-                <div id="FAQ-R" class="col-md-7 col-12 px-5">
-                    <!-- 問題11111111111111111111 -->
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
-                        Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
-                        <a data-toggle="collapse" href="#row-1">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
-                        </a>
-                    </div>
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
-                        <a data-toggle="collapse" href="#row-1">
-                            Q : 請問瓦庫燒肉和瓦庫麻辣鍋是同一個地方嗎 ?
-                        </a>
-                    </div>
-                    <!-- 收合bootstrap ↑ ↓ -->
-                    <div class="collapse bg-expand-color px-2" id="row-1">
-                        A : 不同地方喔 ~
-                    </div>
-                    <!-- 問題22222222222222222222 -->
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
-                        Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
-                        <a data-toggle="collapse" href="#row-2">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
-                        </a>
-                    </div>
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
-                        <a data-toggle="collapse" href="#row-2">
-                            Q : 請問麻辣鍋鍋底含有牛油嗎 ? 不吃牛有其他鍋底嗎 ?
-                        </a>
-                    </div>
-                    <div class="collapse bg-expand-color px-2" id="row-2">
-                        A : 有 ~ 牛油是麻辣鍋好吃的秘訣。不吃牛可選老火燉雞/野椒酸菜/上湯番茄/蟲草菌菇。
-                    </div>
-                    <!-- 問題33333333333333333333 -->
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
-                        Q : 開鍋費為何酌收 $120 ?
-                        <a data-toggle="collapse" href="#row-3">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
-                        </a>
-                    </div>
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
-                        <a data-toggle="collapse" href="#row-3">
-                            Q : 開鍋費為何酌收 $120 ?
-                        </a>
-                    </div>
-                    <div class="collapse bg-expand-color px-2" id="row-3">
-                        A : 開鍋費不單是白飯、醬料 . . . 鍋底完全天然熬煮，麻辣鍋嚴選進口石柱紅乾辣椒、金陽花椒、燈籠椒為底料，老火燉雞更是以老母雞、土雞爪、精華火腿燉煮24小時，因此食材成本較高喔。
-                    </div>
-                    <!-- 問題44444444444444444444 -->
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
-                        Q : 請問有特約停車場嗎 ?
-                        <a data-toggle="collapse" href="#row-4">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
-                        </a>
-                    </div>
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
-                        <a data-toggle="collapse" href="#row-4">
-                            Q : 請問有特約停車場嗎 ?
-                        </a>
-                    </div>
-                    <div class="collapse bg-expand-color px-2" id="row-4">
-                        A : 對面有Times收費停車場喔 ~
-                    </div>
-                    <!-- 問題55555555555555555555 -->
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-none d-md-flex">
-                        Q : 請問有提供鍋底外帶嗎 ?
-                        <a data-toggle="collapse" href="#row-5">
-                            <i class="fas fa-plus icon-color FQA-gps"></i>
-                        </a>
-                    </div>
-                    <div class="row p-FAQR font-weight-bold FQA-GPS d-flex d-md-none">
-                        <a data-toggle="collapse" href="#row-5">
-                            Q : 請問有提供鍋底外帶嗎 ?
-                        </a>
-                    </div>
-                    <div class="collapse bg-expand-color px-2" id="row-5">
-                        <p class="p-0 A5-text">
-                            A : 小鍋(2-4人)$300湯底選一+ 700自選食材 + 15 包裝
-                        </p>
-                        <p class="Q5-padding mb-0">
-                            大鍋(4人以上)$600湯底選一+ 700自選食材 + 15 包裝
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="container">
+					<div class="footer-information-com">
+						<p>
+							<i class="fas fa-map-marker-alt mr-2"></i>
+							台中市中區自由路2段33號
+							<i class="fas fa-phone-alt mr-2 ml-4"></i>
+							04-2223-1155
+						</p>
+					</div>
+					<div class="row footer-information-mobile">
+						<div class="col-12">
+							<i class="fas fa-map-marker-alt mr-2"></i>
+							台中市中區自由路2段33號
+						</div>
+						<div class="col-12">
+							<i class="fas fa-phone-alt mr-2"></i>
+							04-2223-1155
+						</div>
+					</div>
+				</div>
+				<div class="footer-icon-group">
+					<a href="" title="瓦庫麻辣鍋LINE"><i class="fab fa-line"></i></a>
+					<a
+						href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
+						target="_blank"
+						title="瓦庫麻辣鍋FB"
+						><i class="fab fa-facebook"></i>
+					</a>
+					<a
+						href="https://www.instagram.com/wowcool33/?utm_source=ig_embed"
+						target="_blank"
+						title="瓦庫麻辣鍋IG"
+						><i class="fab fa-instagram"></i>
+					</a>
+				</div>
 
-    <footer>
-        <div class="footer-box">
-            <div class="footer-logo">
-                <img src="./img/footer-logo.png" class="lazyload" data-src="./img/footer-logo.png" alt="瓦庫麻辣鍋">
-                <div class="footer-logo-text font-weight-bold">瓦庫麻辣鍋</div>
-                <p>WOW COOL HOT POT</p>
-            </div>
+				<div class="footer-copyright">
+					<p class="py-3 mb-0">
+						WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All
+						Rights Reserved. Design by 腳麻吃麻辣鍋<br />僅供學習用途，如有侵權請來信告知。
+					</p>
+				</div>
+			</div>
+		</footer>
 
-            <div class="container">
-                <div class="footer-information-com">
-                    <p>
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        台中市中區自由路2段33號
-                        <i class="fas fa-phone-alt mr-2 ml-4"></i>
-                        04-2223-1155
-                    </p>
-                </div>
-                <div class="row footer-information-mobile">
-                    <div class="col-12">
-                        <i class="fas fa-map-marker-alt mr-2"></i>
-                        台中市中區自由路2段33號
-                    </div>
-                    <div class="col-12">
-                        <i class="fas fa-phone-alt mr-2"></i>
-                        04-2223-1155
-                    </div>
-                </div>
-            </div>
-            <div class="footer-icon-group">
-                <a href="" title="瓦庫麻辣鍋LINE"><i class="fab fa-line"></i></a>
-                <a href="https://www.facebook.com/WowCool33/?__tn__=K-R&eid=ARCBX6Qf2P6kz51MEp4oDD1YmySid8qYsBuGYyBF_7RXgVyX1FTaqmTfFVGTdulLnkof9AokoY41JF0V&fref=mentions&__xts__[0]=68.ARBR_VdFXQGytocbCgd9wDCuUiTTGctdfk1tpYvhG5YPVdF9V13ec_Qstm0D21JIEXdoQOWJp2Aylsz1y_yBqyLg2w70IhkEiqXmBnJgFNXOngiZFN2ZG_obs2GMQEAy709_WE4q1BEh2ans8pHGjK8_hTjndo1mTCrHmAKgBZb6LUKWjv21r-3vE8oSaj1i3fkH5hR2qAxbvvqXlWnPXwWpy1YuN7XavOsdQ0owHYoBs0n9aarkiPBt41NBnHLUfVTtFhcJHUz6RQr6n9Pz-Z83f2Xx0fmQaZesuxkryWuCEikoM6nZIL5CRwivm9TQDD8G3emo0GoveWRZ2IsFnNelnqIr"
-                    target="_blank" title="瓦庫麻辣鍋FB"><i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/wowcool33/?utm_source=ig_embed" target="_blank" title="瓦庫麻辣鍋IG"><i
-                        class="fab fa-instagram"></i>
-                </a>
-            </div>
-
-            <div class="footer-copyright ">
-                <p class="py-3 mb-0">WOW COOL HOT POT <i class="far fa-copyright"></i> Copyright All Rights Reserved.
-                    Design by 腳麻吃麻辣鍋<br>僅供學習用途，如有侵權請來信告知。</p>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-    <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function (e) {
-            $hamburger.toggleClass("is-active");
-            // Do something else, like open/close menu
-        });
-    </script>
-    <!-- gotop卷軸偵測jquery -->
-    <script>
-        $(function () {
-            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 400) {
-                    $('#gotop').fadeIn("slow");
-                } else {
-                    $('#gotop').fadeOut("slow");
-                }
-            });
-        });
-    </script>
-    <script>
-        $(window).on("load", function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-            // $("#status").fadeOut();
-            // $("#loading_txt").fadeOut();
-            $(".preloader").delay(350).fadeOut("slow");
-        });
-    </script>
-    <script type="text/javascript">
-        $("img.lazyload").lazyload();
-    </script>
-</body>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+			integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+			integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			var $hamburger = $(".hamburger");
+			$hamburger.on("click", function (e) {
+				$hamburger.toggleClass("is-active");
+				// Do something else, like open/close menu
+			});
+		</script>
+		<!-- gotop卷軸偵測jquery -->
+		<script>
+			$(function () {
+				/* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 400) {
+						$("#gotop").fadeIn("slow");
+					} else {
+						$("#gotop").fadeOut("slow");
+					}
+				});
+			});
+		</script>
+		<script>
+			$(window).on("load", function () {
+				// 確認整個頁面讀取完畢再將這三個div隱藏起來
+				// $("#status").fadeOut();
+				// $("#loading_txt").fadeOut();
+				$(".preloader").delay(350).fadeOut("slow");
+			});
+		</script>
+		<script type="text/javascript">
+			$("img.lazyload").lazyload();
+		</script>
+	</body>
 </html>
